@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/gamer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="28dp"
+        tools:text="請輸入玩家名字" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="請輸入姓名以開始遊戲"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="354dp"
+
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="136dp">
+
+        <RadioButton
+            android:id="@+id/scissor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="剪刀" />
+
+        <RadioButton
+            android:id="@+id/stone"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:text="石頭"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+        <RadioButton
+            android:id="@+id/papper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="布" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猜拳"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="電腦出拳"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我方出拳"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="勝利者"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
